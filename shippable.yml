@@ -1,9 +1,10 @@
 language: java
 
+script: mvn test
 jdk:
-   - oraclejdk8
-
-build_ci:
-   - mvn clean cobertura:cobertura
-   - mvn test
-
+  - oraclejdk8
+  - openjdk8
+notifications:
+  email:
+    on_success: never
+    on_failure: change
