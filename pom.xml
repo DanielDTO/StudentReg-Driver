@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
  <repositories>
 	<repository>
-		<id>Student-mvn-repo</id>
+		<id>student-mvn-repo</id>
 		<url>https://raw.github.com/DanielDTO/Student/mvn-repo/</url>
 		<snapshots>
 			<enabled>true</enabled>
@@ -12,7 +12,7 @@
 </repositories>
 
   <groupId>ie.DanielDTO</groupId>
-  <artifactId>Student</artifactId>
+  <artifactId>studentreg-driver</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
   <build>
@@ -36,13 +36,14 @@
             </goals>
         </execution>
     </executions>
-</plugin>
-  	</plugins>
+  </plugin>
+</plugins>
   </build>
-  <dependencies>
+  
+<dependencies>
   	<dependency>
   		<groupId>ie.DanielDTO</groupId>
-  		<artifactId>Student</artifactId>
+  		<artifactId>student</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
   </dependencies>
