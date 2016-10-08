@@ -4,6 +4,10 @@ script: mvn test
 jdk:
   - oraclejdk8
   - openjdk8
+build:
+  ci:
+    -mvn clean
+    -mvn assembly:assembly
 notifications:
   email:
     on_success: never
