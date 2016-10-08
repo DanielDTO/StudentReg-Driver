@@ -55,7 +55,7 @@ public class StudentReg {
 		
 		while(i.hasNext()){
 			Student temp = i.next();
-			System.out.print("Student:" + "\t" + Student.getUsername() + "\t");
+			System.out.print("Student:" + "\t" + temp.getUsername() + "\t");
 			ArrayList<Module> list = map_a.get(temp);
 			Iterator<Module> itr = list.iterator();
 			
