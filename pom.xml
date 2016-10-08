@@ -11,8 +11,8 @@
 	</repository>
 </repositories>
 
-  <groupId>assign_1</groupId>
-  <artifactId>assign_1</artifactId>
+  <groupId>ie.DanielDTO</groupId>
+  <artifactId>Student</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
   <build>
@@ -41,8 +41,8 @@
   </build>
   <dependencies>
   	<dependency>
-  		<groupId>assignment.1</groupId>
-  		<artifactId>Assignment_1</artifactId>
+  		<groupId>ie.DanielDTO</groupId>
+  		<artifactId>Student</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
   </dependencies>
