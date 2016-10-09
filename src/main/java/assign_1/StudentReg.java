@@ -23,7 +23,7 @@ public class StudentReg {
 						new Student("Wayne Cook", "29/11/1993", 23, 2158)};
 		Student[] s3 ={ new Student("Jacob Miles", "14/10/1995", 21, 3257),
 						new Student("Peter Parker", "10/12/1992", 24, 3459)};
-		
+		//array of modules
 		Module[] modulesList ={ new Module("Digital Signal Processing","EE457", s1),
 							 new Module("Software Engineering III", "CT417", s2),
 							 new Module("Telecommunication Software Applications", "EE453", s3)};
@@ -66,7 +66,7 @@ public class StudentReg {
 				Module t = itr.next();
 				System.out.println(t.getModuleName() + " ");
 			}
-			
+			//printing out course
 			System.out.println("Course:" + map_b.get(list.get(0)).getCourseName());
 		}
 
