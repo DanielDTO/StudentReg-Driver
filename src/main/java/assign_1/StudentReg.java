@@ -12,8 +12,9 @@ import assignment_1.Student;
 public class StudentReg {
 
 	public static void main(String[] args) {
-		String courseName = "Electronic and Computer Engineering";
+		String courseName = "Electronic and Computer Engineering (ECE)";
 	//Easier and less complicated to use arrays of Students rather than individual student objects. Same applies for the module class.
+	//Chose this method after trying to create individual students and adding them to modules on at a time.
 		
 		Student[] s1 ={ new Student("William Jacob", "22/05/1994", 22, 3001),
 						new Student("Jonah Hill", "04/03/1995", 21, 2014),
@@ -55,15 +56,15 @@ public class StudentReg {
 		
 		while(i.hasNext()){
 			Student temp = i.next();
-			System.out.print("Student:" + "\t" + temp.getUsername() + "\t");
+			System.out.println("Student:" + "\t" + temp.getUsername() + "\t");
 			ArrayList<Module> list = map_a.get(temp);
 			Iterator<Module> itr = list.iterator();
 			
-			System.out.print("Modules:");
+			System.out.println("Modules:");
 			
 			while(itr.hasNext()){
 				Module t = itr.next();
-				System.out.print(t.getModuleName() + " ");
+				System.out.println(t.getModuleName() + " ");
 			}
 			
 			System.out.println("Course:" + map_b.get(list.get(0)).getCourseName());
